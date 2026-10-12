@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#211637">
+  <title>Operation Sorry 💗 | Kalu Don</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="#" data-page="home">🪐 Operation: Sorry</a>
+
+  <nav>
+    <button data-page="home">Home</button>
+    <button data-page="fun">Funny Zone 😂</button>
+    <button data-page="mystery">Mystery 🔐</button>
+    <button data-page="letter">My Feelings 💌</button>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HOME -->
+  <section id="home" class="page active">
+    <div class="hero">
+      <div class="hero-content">
+        <p class="kicker">A LITTLE UNIVERSE, JUST FOR YOU</p>
+
+        <h1>
+          Hey, bittuuu...<br>
+          <span>I'm Sorry!</span> 💗
+        </h1>
+
+        <p>
+          Oye bacha! 🥺 Tumhare liye kuch special banaya hai.
+          Thodi masti, kuch surprises aur ek baat jo dil se
+          kehni hai.
+        </p>
+
+        <button data-page="fun">Enter Our Universe 🚀</button>
+        <button class="secondary" data-page="letter">Read My Letter 💌</button>
+
+        <p class="small-note">Made with a little code and lots of feelings. 💜</p>
+      </div>
+
+      <div class="hero-art">🐈‍⬛💗</div>
+    </div>
+
+    <h2 class="section-title">Choose Your Adventure ✨</h2>
+
+    <div class="grid">
+      <article class="card">
+        <div class="emoji">🚨</div>
+        <h3>Breaking News</h3>
+        <p>Ek bewakoof insaan galat baat bolte hue pakda gaya (jo galt tha bhi nhi..Aree mjak bro mjak)!</p>
+        <button id="breakingBtn">Read News</button>
+        <div id="breakingResult" class="result" hidden></div>
+      </article>
+
+      <article class="card">
+        <div class="emoji">😂</div>
+        <h3>Emergency Smile Kit</h3>
+        <p>Random funny messages ke liye button dabao.</p>
+        <button id="jokeBtn">Surprise Me</button>
+        <div id="jokeResult" class="result" hidden></div>
+      </article>
+
+      <article class="card">
+        <div class="emoji">💌</div>
+        <h3>Ek Baat Dil Se</h3>
+        <p>Ek sorry jo mazaak nahi, dil se hai.</p>
+        <button data-page="letter">Open My Letter</button>
+      </article>
+    </div>
+
+    <div class="card note-card">
+      <div class="emoji">🌷</div>
+      <h3>One Little Reminder</h3>
+      <p>
+        Har insaan se galti ho sakti hai. Important ye hai
+        ki hum apni galti samjhein, usse seekhein aur ek
+        doosre ki feelings ki respect karein.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- FUNNY ZONE -->
+  <section id="fun" class="page">
+    <button class="back" data-page="home">← Home</button>
+
+    <h2 class="section-title">Emergency Smile Department 😂</h2>
+
+    <div class="grid">
+      <article class="card">
+        <div class="emoji">🚫</div>
+        <h3>Suspicious Button</h3>
+        <p>Is button ko click karne ki sakht manaahi hai!</p>
+        <button data-page="buttonGame">Don't Click 👀</button>
+      </article>
+
+      <article class="card">
+        <div class="emoji">⚖️</div>
+        <h3>Sorry Court</h3>
+        <p>Judge Sahiba ab faisla sunayengi.</p>
+        <button data-page="court">Start Trial</button>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🎡</div>
+        <h3>Chaos Wheel</h3>
+        <p>Universe se ek random funny mission.</p>
+        <button data-page="wheel">Spin Wheel</button>
+      </article>
+
+      <article class="card">
+        <div class="emoji">🧠</div>
+        <h3>Personality Quiz</h3>
+        <p>Apna funny personality title pata karo.</p>
+        <button id="startQuizBtn">Take Quiz</button>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- DON'T CLICK GAME -->
+  <section id="buttonGame" class="page">
+    <button class="back" data-page="fun">← Back</button>
+
+    <div class="content card center">
+      <div class="big" id="buttonFace">🤨</div>
+      <h2>The Suspicious Button</h2>
+      <p>Pakka nahi dabana? Soch lo, Kalu ji ! 😂</p>
+
+      <button id="suspiciousBtn">DON'T CLICK THIS</button>
+      <div id="buttonResult" class="result">
+        Main dekh raha hoon... 👀
+      </div>
+    </div>
+  </section>
+
+
+  <!-- APOLOGY COURT -->
+  <section id="court" class="page">
+    <button class="back" data-page="fun">← Back</button>
+
+    <div class="content card center">
+      <div class="big">⚖️🐻</div>
+      <h2>The Sorry Court</h2>
+
+      <p><b>Accused:</b> Main 😭</p>
+      <p><b>Charge:</b> Mam ko mene naraj kar diya or Mam ab gussa hai.</p>
+      <p>Judge sahiba, kya faisla hai?</p>
+
+      <div class="choices">
+        <button data-verdict="guilty">Guilty 😔</button>
+        <button data-verdict="snack">Fine: Snacks 🍪</button>
+        <button data-verdict="lecture">Lecture Do 😤</button>
+      </div>
+
+      <div id="verdictResult" class="result" hidden></div>
+    </div>
+  </section>
+
+
+  <!-- CHAOS WHEEL -->
+  <section id="wheel" class="page">
+    <button class="back" data-page="fun">← Back</button>
+
+    <div class="content card center">
+      <div class="big" id="wheelIcon">🎡</div>
+      <h2>Chaos Wheel</h2>
+      <p>Chalo dekhte hain aaj kya surprise milta hai!</p>
+
+      <button id="spinBtn">SPIN ✨</button>
+
+      <div id="wheelResult" class="result" hidden></div>
+    </div>
+  </section>
+
+
+  <!-- MYSTERY ROOM -->
+  <section id="mystery" class="page">
+    <button class="back" data-page="home">← Home</button>
+
+    <div class="content card center">
+      <div class="big">🚪🔐</div>
+      <h2>Mystery Room</h2>
+
+      <p>Detective Don, solve this: 2 + 3 = ?</p>
+
+      <input
+        id="secretCode"
+        type="number"
+        placeholder="Enter secret code"
+      >
+
+      <button id="unlockBtn">Unlock Surprise</button>
+
+      <div id="mysteryResult" class="result" hidden></div>
+    </div>
+  </section>
+
+
+  <!-- PERSONALITY QUIZ -->
+  <section id="quiz" class="page">
+    <button class="back" data-page="fun">← Back</button>
+
+    <div class="content card center">
+      <div class="big">🧠</div>
+      <h2>Kalu Don Personality Quiz</h2>
+
+      <p id="quizQuestion">Ready for your quiz?</p>
+
+      <div class="meter">
+        <span id="quizProgress"></span>
+      </div>
+
+      <div id="quizAnswers" class="choices"></div>
+      <div id="quizResult" class="result" hidden></div>
+    </div>
+  </section>
+
+
+  <!-- LOVE LETTER -->
+  <section id="letter" class="page">
+    <button class="back" data-page="home">← Home</button>
+
+    <div class="content card love-letter center">
+      <div class="love-icon">💌</div>
+
+      <p class="letter-tag">JUST FOR YOU, KALU DON ❤️</p>
+
+      <h2>Suno Na, Meri Jaan... 🥺💗</h2>
+
+      <p class="letter-opening">
+        Something for you, daantna ho toh daant lena,
+        par meri ek baat dil se sun lena, bacha...
+      </p>
+
+      <div class="letter-body">
+        <p>
+          Meri princess, mujhse galti ho gayi. Mujhe sach mein
+          bura lag raha hai ki meri kisi baat se tumhara
+          dil dukha. Main apni galti ko galat maanta hoon
+          aur tumse dil se maafi maangta hoon. ❤️
+        </p>
+
+        <p>
+          Main ye nahi kehta ki mujhse zindagi mein kabhi
+          galti nahi hogi, inya hi hovgi mer s to krle k kar. Hum insaan hain, aur kabhi-kabhi
+          anjaane mein galti ho jaati hai. Lekin bacha,
+          main tumhe jaanbujhkar hurt nahi karna chahta.
+          Main apni baaton aur apne behaviour ko lekar
+          zyada careful rehne ki poori koshish karunga.
+        </p>
+
+        <p>
+          Mujhe tumhare saath sirf aaj nahi, balki bahut
+          lamba safar tay karna hai. Main chahta hoon ki
+          hum apni khushiyan bhi share karein, narazgi bhi
+          baat karke suljhayein aur mushkil waqt mein ek
+          doosre ko samajhne ki koshish karein.
+        </p>
+
+        <p>
+          kalu ji, mujhe tumhare saath saato janam tak chalne
+          wale rishte ka sapna dekhna hai. 🫶 Main chahta
+          hoon ki chhoti-badi galtiyon se hum seekhein,
+          ek doosre ki feelings ko samjhein aur apne rishte
+          ko pyaar, bharose aur respect se mazboot banayein.
+        </p>
+        <p>
+          Main ye nahi keh raha ki tum apni narazgi turant
+          bhool jao ya bina mann ke mujhe maaf kar do.
+          Tumhara hurt hona bhi important hai aur tumhari
+          feelings ki respect karna bhi. Bas jab tum ready
+          ho, mujhse baat kar lena. Main tumhari baat
+          sunna aur samajhna chahta hoon.
+        </p>
+
+        <p>
+          Main perfect hone ka jhootha vaada nahi karunga,
+          bacha. Lekin main jaanbujhkar tumhe hurt na karne,
+          apni galti accept karne aur agar galti ho jaaye
+          toh use sudharne ki poori koshish karunga.
+        </p>
+      </div>
+
+      <div class="promise">
+        <div class="big">🫶</div>
+        <h3>Meri Jaan Ke Naam Ek Promise</h3>
+        <p>
+          Galti ho jaaye toh ego se nahi, pyaar se baat
+          karunga. Sirf sorry bolkar nahi, apne actions se
+          bhi dikhane ki koshish karunga ki tum mere liye
+          kitni special ho.
+        </p>
+      </div>
+
+      <h2 class="final-sorry">
+        I am really sorry, meri jaan. 🥺❤️
+      </h2>
+
+      <p>
+        Main tumhare saath ek aisa rishta chahta hoon
+        jahan hum dono apni baat keh sakein, ek doosre
+        ko samajh sakein aur saath mein grow karein.
+        I care about you, bacha. 💗
+      </p>
+
+      <button id="hugBtn">Ek Virtual Hug? 🫂</button>
+
+      <div id="hugResult" class="result" hidden>
+        Ek warm virtual hug tumhare liye. 🫂💗
+        Hum dono ko kisi ki najar na lage..
+      </div>
+
+      <button class="secondary" data-page="home">
+        Back to Our Universe 🌙
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Made with 💜, a little code, and a sincere apology.
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
